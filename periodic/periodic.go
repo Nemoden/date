@@ -23,7 +23,7 @@ func (p Periodic) Matches(t time.Time) bool {
 
 // Checks if periodic event is overdue.
 func (p Periodic) Overdue(due time.Time) bool {
-	return due.After(p.EndsAt)
+	return !p.EndsAt.IsZero() && due.After(p.EndsAt)
 }
 
 // Creates a periodic event which only runs once.
