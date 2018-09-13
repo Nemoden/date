@@ -3,13 +3,13 @@ Package `interval`
 
 Shorthands to create interval:
 
-    interval.Months(months int) *Interval
-    interval.Years(years int) *Interval
-    interval.Seconds(seconds int) *Interval
-    interval.Minutes(minutes int) *Interval
-    interval.Hours(hours int) *Interval
-    interval.Days(days int) *Interval
-    interval.Weeks(weeks int) *Interval
+    interval.Months(months int) *interval.Interval
+    interval.Years(years int) *interval.Interval
+    interval.Seconds(seconds int) *interval.Interval
+    interval.Minutes(minutes int) *interval.Interval
+    interval.Hours(hours int) *interval.Interval
+    interval.Days(days int) *interval.Interval
+    interval.Weeks(weeks int) *interval.Interval
 
 Geenral usage:
 
